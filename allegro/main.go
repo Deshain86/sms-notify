@@ -12,7 +12,7 @@ import (
 
 var (
 	Login         string = "matiopolskie"
-	Password      string = ""
+	Password      string = "="
 	ApiUrl        string = "https://webapi.allegro.pl/service.php"
 	CountryCode   string = "1"
 	LocalVersion  string = "1423185952"
@@ -119,7 +119,7 @@ func getItem(item string) []Item {
          <ser:item>
 	      <ser:filterId>search</ser:filterId>
 	      <ser:filterValueId>
-	         <ser:item>raspberry</ser:item>
+	         <ser:item>` + item + `</ser:item>
 	      </ser:filterValueId>
 	   	</ser:item>
          </ser:filterOptions>
